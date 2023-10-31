@@ -71,26 +71,34 @@ nav{
 }
 h1{
   text-align: center;
-  font-size: 40px;
-  
+  font-size: 40px; 
+}
+
+/*  FOOTER */
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ----------------- Responsive Tablette ----------------- */
 
 @media screen and (min-width: 768px) {
   .nav-content{
-    height: 160px;
+    height: 100px;
   }
   .link-item{
-    height: 160px;
+    height: 100px;
     width: 150px;
   }
   .link-icon{
-    font-size: 55px;
+    font-size: 45px;
+    padding-top: 5px;
   }
   .link-text{
-    font-size: 30px;
-    margin-top: 25px;
+    font-size: 20px;
   }
   
   /* L'indicateur du lien active */
@@ -100,13 +108,22 @@ h1{
     left: 75px;
     height: 50px;
     width: 50px;
-    border: 6px solid whitesmoke;
-    border-radius: 50%;
   }
   h1{
-    font-size: 90px;
+    font-size: 50px;
   }
 
 }
 
 /* ----------------- Responsive PC ----------------- */
+
+@media screen and (min-width: 960px) {
+  .link-item{
+    width: 250px;
+  }
+  /* L'indicateur du lien active */
+  
+  .indicator{
+    left: 125px;
+  }
+}

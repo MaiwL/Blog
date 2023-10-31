@@ -55,6 +55,14 @@
 
     <footer>
 
+        <div class="footer nav-content">
+            <a href="#">Mentions Légales</a>
+            <p>Maïwenn Lemaire 2023</p>
+            <a href="#"><i class='bx bxl-facebook-circle link-icon'></i></a>
+            <a href="#"><i class='bx bxl-twitter link-icon'></i></a>
+            <a href="#"><i class='bx bxl-instagram link-icon' ></i></a>
+        </div>
+
     </footer>
 
     <script src="../../public/JS/script.js"></script>
