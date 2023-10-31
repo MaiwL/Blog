@@ -77,6 +77,36 @@ h1{
 
 /* ----------------- Responsive Tablette ----------------- */
 
+@media screen and (min-width: 768px) {
+  .nav-content{
+    height: 160px;
+  }
+  .link-item{
+    height: 160px;
+    width: 150px;
+  }
+  .link-icon{
+    font-size: 55px;
+  }
+  .link-text{
+    font-size: 30px;
+    margin-top: 25px;
+  }
+  
+  /* L'indicateur du lien active */
+  
+  .indicator{
+    top: -22px;
+    left: 75px;
+    height: 50px;
+    width: 50px;
+    border: 6px solid whitesmoke;
+    border-radius: 50%;
+  }
+  h1{
+    font-size: 90px;
+  }
 
+}
 
 /* ----------------- Responsive PC ----------------- */
