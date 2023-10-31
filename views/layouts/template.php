@@ -6,81 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Marvel</title>
     <link rel="stylesheet" href="../../public/CSS/style.css">
-
+    <!-- BOXICONS CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+    
     <header>
-    <nav>
-            <h2>ML</h2>
-            <button id="navbarToggle">
-                <img src="../../public/Images/Menu.svg" alt="Menu de navigation">
-            </button>
-        </nav>
-        <div class="navbar-menu" id="navbarMenu">
-            <div class="close-button" id="closeButton"><img class="closedButton" src="../../public/Images/Cross.svg" alt="Croix pour fermer la navigation"></div>
-            <ul class="menu">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Compétences</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav class="nav">
+            <ul class="nav-content">
+                <li class="nav-list">
+                    <a href="#" class="link-item active">
+                        <i class='bx bx-home-alt link-icon'></i>
+                        <span class="link-text">Acceuil</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="#" class="link-item">
+                        <i class='bx bx-conversation link-icon'></i>
+                        <span class="link-text">Articles</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="#" class="link-item">
+                        <i class='bx bx-message-rounded-dots link-icon' ></i>
+                        <span class="link-text">Commentaires</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="#" class="link-item">
+                        <i class='bx bx-user-circle link-icon' ></i>
+                        <span class="link-text">Comptes</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="#" class="link-item">
+                        <i class='bx bx-phone link-icon'></i>
+                        <span class="link-text">Contact</span>
+                    </a>
+                </li>
             </ul>
-        </div>
-        <!-- <nav>
-            <div class="logo">
-                <h1>MARVEL</h1>
-                <p class="blog">BLOG</p>
-            </div>
-            <button id="navbarToggle">
-                <img src="../../public/Images/Menu.svg" alt="Icône menu">
-            </button> -->
-           
-            <!-- <div class="navbarMenu" id="navBarMenu">
-                    <div id="closeButton">
-                        <img src="../../public/Images/Cross.svg" alt="Croix">
-                    </div>
-                    <ul>
-                    <li><a href="#">ACCUEIL</a></li>
-                    <select name="categorie" id="category">
-                        <option value="marvel">Marvel Comics</option>
-                        <option value="dc">DC Comics</option>
-                        <option value="image">Image Comics</option>
-                        <option value="idw">IDW Publishing</option>
-                        <option value="valiant">Valiant Comics</option>
-                        <option value="boom">Boom! Studios</option>
-                    </select>
-                    <li><a href="#">Commentaires</a></li>
-                    <li><a href="#">Compte</a></li>
-                </ul>
-                </div> -->
-            <!-- <div class="menu">
-                <ul>
-                    <li><a href="#">ACCUEIL</a></li>
-                    <select name="categorie" id="categorie">
-                        <option value="marvel">Marvel Comics</option>
-                        <option value="dc">DC Comics</option>
-                        <option value="image">Image Comics</option>
-                        <option value="idw">IDW Publishing</option>
-                        <option value="valiant">Valiant Comics</option>
-                        <option value="boom">Boom! Studios</option>
-                    </select>
-                    <li><a href="#">Commentaires</a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
+            <span class="indicator"></span>
         </nav>
-        <div class="navbar-menu" id="navbarMenu">
-                <div class="close-button" id="closeButton"><img class="closedButton" src="../../public/Images/Cross.svg" alt="Croix pour fermer la navigation"></div>
-                <ul class="menu">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Compétences</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div> -->
     </header>
+    <h1>COMICS BLOG</h1>
 
     <?= $content ?>
 

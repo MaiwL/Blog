@@ -1,16 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { 
+    // NavBar Indicator
+    const linkItems = document.querySelectorAll(".link-item");
 
-    //  Constante pour activer le menu 
-    const navbarToggle = document.getElementById("navbarToggle");
-    const navbarMenu = document.getElementById("navbarMenu");
-    const closeButton = document.getElementById("closeButton");
+    linkItems.forEach((linkItem, index) => {
+        linkItem.addEventListener("click", () => {
+            document.querySelector(".active").classList.remove("active");
+            linkItem.classList.add("active");
 
-    //  Activer et désactiver le menu
-    navbarToggle.addEventListener("click", () => {
-        navbarMenu.classList.toggle("active");
-    });
+            const indicator = document.querySelector(".indicator");
 
-    closeButton.addEventListener("click", () => {
-        navbarMenu.classList.remove("active");
-    });
+            indicator.style.left = `${index * 65 + 32}px`;
+        })
+    })
 });
